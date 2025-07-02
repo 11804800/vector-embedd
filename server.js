@@ -11,6 +11,10 @@ app.use(express.json());
 
 let model;
 
+app.get("/",(req,res)=>{
+  res.send("hello working and running")
+});
+
 // Load Universal Sentence Encoder
 (async () => {
   console.log("Loading Universal Sentence Encoder...");
